@@ -1,0 +1,87 @@
+<html>
+     <head>
+       <title>One Direction/TOUR</title>
+	   <link type="text/css" rel="stylesheet" href="style.css" media="all">
+	   <script type="text/javascript">
+	    function verify()
+		{
+		   var n=document.form.name.value;
+		   var no=document.form.no.value;
+		   var e=document.form.email.value;
+		   if(n=="")
+		   {
+		       alert("You must enter your name");
+			   return false;
+			}
+			if(no=="")
+		   {
+		       alert("You must enter your phone no");
+			   return false;
+			}
+			if(e=="")
+		   {
+		       alert("You must enter your email address");
+			   return false;
+			}
+		}
+	   </script>
+	   <style type="text/css">
+	       #box{
+		          width: 690px;
+				  height: 470px;
+				  border: 12px solid black;
+				}
+			#container{
+			        width:1100px;
+					height: 2000px;
+					background-color: white;
+			}
+			#signin{
+			        float: left;
+					font-size: 35px;
+					padding-top: 90px;
+					padding-left:30px;
+				}
+			
+	    </style>
+	 </head>
+	  <body>
+	    <div>
+	    <header style="background-color: black; position: fixed;">
+		    <ul id="a">
+		       <li><a class="links" href="home.html">Home</a></li>
+			   <li><a class="links" href="music.html">Music</a></li>
+			   <li><a class="links" href="band.html">Band</a></li>
+			   <li><a class="links" href="gallery.html">Gallery</a></li>
+			   <li><a class="links" href="tour.html">Tour</a></li>
+			   <li><a href="home.html"><img src="logo.png" align="center" width="400px" height="70px"></a></li>
+            </ul>       		
+		</header>
+		</div>
+		<div id="container">
+		        <div id="box">
+		        <p id="signin">SIGN UP<br/>
+				               FOR<br/>
+							   One Direction<br/> 
+							   TOUR AND NEWS<br/>
+							   UPDATE
+				</p>
+				<p id="signin">SIGN UP<br/>
+				               FOR<br/>
+							   One Direction<br/> 
+							   TOUR AND NEWS<br/>
+							   UPDATE
+				</p>
+				<form name="form" id="f">
+				    <b>Country:</b><br/>
+					
+				    <b>Name:</b><br/><input type="text" name="name" value="" size="40"><br/><br/>
+					<b>Email:</b><br/><input type="text" name="email" value="" size="50"><br/><br/>
+					<b>Phone No.:</b><br/><input type="text" name="no" value="" size="30"><br/><br/>
+					<input type="submit" value="submit" name="submit" onclick="verify()"><br/><br/>
+				</form>
+		        </div>
+		</div>
+	</body>
+</html>
+	
